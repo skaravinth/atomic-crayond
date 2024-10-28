@@ -1,0 +1,16 @@
+.backgroundimage{
+background-color: #EFEEFB;
+   width: 100vw;
+   height: 100vh;
+   text-align: center;
+   display: grid;
+   place-items: center;
+
+
+}
+.Bgimage{
+    width: 100%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}

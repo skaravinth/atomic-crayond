@@ -1,0 +1,55 @@
+.Forgotpass{
+    height:53%;
+    width:28%;
+    background-color: #ffffff;
+    border-radius: 4%;
+}
+.fglogo{
+    margin-top: 7%;
+    text-align: left;
+    padding-left: 7%;
+}
+.Forgotpassword-heading{
+    text-align: left;
+    color:#0E1824
+}
+.fgheading{
+    text-align: left;
+    padding-left: 7%;
+    margin-top: 5%;
+    font-weight: 600;
+    
+}
+.fgsubheading{
+    text-align: left;
+    color:#5C6266;
+    width:330px;
+    padding-left:7%;
+    margin-top: 2%;
+}
+
+.Forgotpassword-subheading{
+    text-align: left;
+    color:#262C33;
+    
+    padding-bottom: 2%;
+    font-size: 12px;
+   
+}
+.fgemail{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+  
+}
+.fgrememberbox{
+    margin-top: 7%;
+    color:#5C6266;
+}
+.inputbox{
+    margin-left: 7%;
+}
+
+
