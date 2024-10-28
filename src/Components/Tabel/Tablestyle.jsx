@@ -75,7 +75,7 @@ export const tableStyles = {
   },
 
   tableBody:{
-    height:'100px',
+    height:'20px',
      width:'140px'
   },
   tableName: {
@@ -106,6 +106,9 @@ export const tableStyles = {
     border:'none',
     fontSize:'18px',
     fontweight:500
+  } ,
+  tableRow:{
+    height:'20px'
   }
   , tableExp: {
     minWidth: '200px',
@@ -131,7 +134,7 @@ export const tableStyles = {
     fontweight:500
   },
   tableStatus: {
-    minWidth: '100px',
+    minWidth: '130px',
     width: '100px', 
     
     border:'none',
@@ -153,14 +156,14 @@ export const tableStyles = {
 
   },
   tableDesigs: {
-    minWidth: '260px',
+    minWidth: '220px',
     width: '240px', 
    fontSize:'16px',
     border:'none',
    
   },
   tableOPs: {
-    minWidth: '200px', 
+    minWidth: '150px', 
     width: '200px', 
    display:'flex',
    alignItems:'center',
@@ -217,9 +220,9 @@ export const tableStyles = {
     alignItems:'center'
   },
   rptImg:{
-    height:'30px',
-    width:'30px',
-    marginLeft:'10px'
+    height:'40px',
+    width:'40px',
+    marginRight:1.5
   },
   addlab:{
     marginLeft:'20px',
@@ -253,9 +256,9 @@ fontSize:'1.1rem',
     display:'flex',
     alignItems:'center'
   },nameavat:{
-    width:30,
-    height:30,
-    marginRight:1
+    width:40,
+    height:40,
+    marginRight:2
   }
   ,typoname:{
     color:'black',
@@ -263,7 +266,7 @@ fontSize:'1.1rem',
     display:'flex',gap:'4px'
   },
   graph:{
-    width:'70px',height:'30px'
+    width:'70px',height:'40px'
   },
   repttowho:{
     marginLeft:1,
@@ -277,10 +280,10 @@ fontSize:'1.1rem',
   liner:{
     position: 'absolute',
     zIndex:'1000',
-    top:'13.5%',
-    left: '81.95%', // Adjust `left` as needed
+    top:'13.7%',
+    left: '82.95%', // Adjust `left` as needed
     width: '1px', // Thin vertical line
-    height: '72.24%', // Full height of the container
+    height: '71.9%', // Full height of the container
     borderRight: '1px solid #ccc'
   },
   span:{
@@ -292,7 +295,30 @@ fontSize:'1.1rem',
   },
   iconeditbox:{
     marginLeft:'19px'
+  },tooltip: {
+    backgroundColor: '#fff',
+    color: 'black',
+    fontSize: '14px',
+    gap:'10px',
+    padding: '8px',
+    width: '150px',
+    height:'85px', // Maximum width, but no fixed width or height
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+}, arrow: {
+    color: '#fff',           // Match tooltip background color
+  },
+  tablebot:{ display: 'flex', alignItems: 'center' }
+,reporterisimg:{ width: 24, height: 24, marginRight: 1 },
+tableEmss: {
+  minWidth: '200px',
+    width: '200px', 
+  textAlign:'start',
+    border:'none',
+  
+  },moreplace:{ marginLeft: 4, color: '#49C792', cursor: 'pointer' },
+  statuscheck:{
+    display:'flex',
+    gap:'8px'
   }
-
   };
   

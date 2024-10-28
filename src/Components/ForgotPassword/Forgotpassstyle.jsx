@@ -43,6 +43,13 @@ export const ForgotPassStyle = {
     fgrememberbox: {
         marginTop: '7%',
         color: '#5C6266',
+       
+    },
+    fgremember:{
+        textDecoration: 'underline',
+        color:'black',
+        fontWeight:600,
+        marginLeft:'5px'
     },
     inputbox: {
         marginLeft: '7%',

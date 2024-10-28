@@ -5,6 +5,8 @@ export const Homestyle = {
         width: '94.7vw',         
         height: '100vh',       
         backgroundColor: '#F0F0F0',    
+        overflow: 'hidden'
+
             
     },
     Teammember:{
@@ -124,5 +126,47 @@ export const Homestyle = {
         paddingRight:'17px',
         borderRight:'1px solid #CACACA',
       
-    }
+    }, alert:{
+      position: 'absolute',
+      width:'312px',
+      top: '60px',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      height:'40px',
+      backgroundColor: '#CEF3E4',
+      border:'1px solid #7FDCA4',
+      color:'#353448',
+      padding: '0.5rem 1rem',
+      borderRadius: '12px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent:'center'
+      
+
+  }
+  ,
+  alertclose:{
+      color:'black',
+     
+      display:'flex',
+      alignItems:'center',
+      
+      marginLeft:'20px'
+     
+
+  },
+  msg:{
+      display:'flex',
+      justifyContent:'space-between',
+      alignItems:'center',
+      fontWeight:'500'
+  },
+  closeBox:{
+      width:'40px',
+      height:'32px',
+      marginLeft:'40px',
+      display:'flex',
+      alignItems:'center',
+      borderLeft:'1px solid white',
+  }
 };

@@ -29,13 +29,13 @@ const Reset = () => {
       </Box>
       <Box sx={ResetPassStyles.Emailfield}>
         <Typography sx={ResetPassStyles.signinpassword}>
-          New password
+          New password<span style={{ color: 'red' }}>*</span>
         </Typography>
         <Inputfield type="password" placeholder="Enter your new password" sx={ResetPassStyles.inputfield} />
       </Box>
       <Box sx={ResetPassStyles.Passwordfield}>
         <Typography sx={ResetPassStyles.signinpasswords} >
-          Confirm new Password
+          Confirm new Password<span style={{ color: 'red' }}>*</span>
         </Typography>
         <Inputfield type="password" placeholder="Confirm your new password" sx={ResetPassStyles.inputfield} />
       </Box>

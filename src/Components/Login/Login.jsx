@@ -14,6 +14,10 @@ const Login = () => {
     const handleForgotpass = () => {
         navigate('/forgot');
     };
+    const handlelogon=()=>{
+       
+        navigate('/home', { state: { LoginMessage: "Welcome Have a nice day!" } })
+    }
 
     return (
        
@@ -47,11 +51,11 @@ const Login = () => {
                 </Typography>
             </Box>
             <Box sx={SigninStyle.Emailfield}>
-                <Typography sx={SigninStyle.signinemail} variant='body2'>Email</Typography>
+                <Typography sx={SigninStyle.signinemail} variant='body2'>Email<span style={{ color: 'red' }}>*</span></Typography>
                 <Inputfield type="email" placeholder="Enter your email" />
             </Box>
             <Box sx={SigninStyle.Passwordfield}>
-                <Typography sx={SigninStyle.signinPassword} variant="body2">Password</Typography>
+                <Typography sx={SigninStyle.signinPassword} variant="body2">Password<span style={{ color: 'red' }}>*</span></Typography>
                 <Inputfield type="password" placeholder="Enter your password" />
             </Box>
             <Box sx={SigninStyle.forgotpasswordbox}>
@@ -65,7 +69,7 @@ const Login = () => {
                 </Typography>
             </Box>
             <Box sx={SigninStyle.Loginbbox}>
-                <Logins text="Log In" />
+                <Logins text="Log In" onClick={handlelogon}/>
             </Box>
         </Box>
    

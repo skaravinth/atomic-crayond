@@ -7,9 +7,12 @@ import SearchIcon from '@mui/icons-material/Search';
 import Filter from '../../assets/Filter.jsx';
 import Print from '../../assets/Print.jsx';
 import Drawer from '../../Components/Drawer/Drawer';
-import Filterdrawer from '../../Components/FilterDrawe/Filterdrawer.jsx' 
-
+import Filterdrawer from '../../Components/FilterDrawe/Filterdrawer.jsx' ;
+import { useLocation } from 'react-router-dom';
+import Close from '@mui/icons-material/Close';
 const Home = () => {
+  const location = useLocation();
+const { LoginMessage } = location.state || {};
     const [open, setOpen] = useState(false); 
     const [openfilter,setopenfilter] =useState(false)
     const handleOpenDrawer = () => {
@@ -25,8 +28,25 @@ const Home = () => {
     const handleclosefilter=()=>{
         setopenfilter(false);
     }
+
+  const [showLoginMessage, setShowLoginMessage] = useState(true);
+  const handleCloseMessage = () => {
+    setShowLoginMessage(false);
+  };
   return (
    <Box sx={Homestyle.home}>
+         {showLoginMessage && (
+                 <Box sx={Homestyle.alert}>
+            <Box sx={Homestyle.msg} severity="success">
+               
+                Welcome have a nice day
+                <Box sx={Homestyle.closeBox} onClick={handleCloseMessage}>
+                    <Close sx={Homestyle.alertclose}/>
+                </Box>
+            </Box>
+            </Box> 
+
+        )}
         <Box sx={Homestyle.top}>
             <Box><Typography  sx={Homestyle.Teammember}>Team Members</Typography></Box>
             <Box sx={Homestyle.checked}>  <Checkbox defaultChecked   sx={{color: '#49C792','&.Mui-checked': {color: '#49C792',},}}/>

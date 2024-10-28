@@ -44,7 +44,7 @@ const Signup = () => {
       </Box>
       <Box sx={Signupstyle.workingemail}>
         <Typography sx={Signupstyle.workemail} variant='caption' >
-          Work email
+          Work email<span style={{ color: 'red' }}>*</span>
         </Typography>
         <TextFielder type="text" placeholder="enter the name" />
       </Box>

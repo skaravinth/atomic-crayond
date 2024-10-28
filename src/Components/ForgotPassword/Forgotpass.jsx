@@ -1,6 +1,6 @@
 import { Box,Typography } from '@mui/material'
 import React from 'react'
-import './Forgotpass.css';
+
 import Logo from '../../assets/Signuplogo';
 import Input from '../../Components/Button/Inputfield/Inputfield'
 import Button from '../Button/LoginButton/Login';
@@ -28,7 +28,7 @@ const navigate=useNavigate();
             </Box>
             <Box sx={ForgotPassStyle.fgemail}>
                 <Typography sx={ForgotPassStyle.ForgotpasswordSubheading} variant='caption'>
-                    Email
+                    Email<span style={{ color: 'red' }}>*</span>
                 </Typography>
                 <Input type="email" placeholder="Email" />
             </Box>
@@ -38,7 +38,7 @@ const navigate=useNavigate();
             <Box sx={ForgotPassStyle.fgrememberbox}>
                 <Typography variant="body2">
                     Remember the Password?
-                    <span sx={ForgotPassStyle.fgremember} onClick={() => navigate('/login')}>
+                    <span style={ForgotPassStyle.fgremember} onClick={() => navigate('/')}>
                         Log in
                     </span>
                 </Typography>

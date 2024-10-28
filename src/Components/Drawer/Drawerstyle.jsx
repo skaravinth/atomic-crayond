@@ -9,10 +9,15 @@ const drawerStyles = {
       flexDirection: 'column',
       gap: '7.3px',
     },
+    sectionContainer: {
+      marginBottom: '7.5px', // space between each field
+      width: '100%', // full width for consistency
+    },
     header: {
       display: 'flex',
-      justifyContent: 'space-between',
+    
       alignItems: 'center',
+      fontSize:'18px'
     },
     sectionLabel: {
       color: '#484759',
@@ -77,6 +82,9 @@ const drawerStyles = {
       height: '40px',
       width: '40px',
       backgroundColor: 'white',
+      '&:hover':{
+        backgroundColor:'white'
+      }
     },
   };
   

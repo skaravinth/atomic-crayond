@@ -28,33 +28,37 @@ export default function RightDrawer({ open, onClose }) {
   const list = () => (
     <Box sx={drawerStyles.container} role='presentation'>
       <Box sx={drawerStyles.header}>
-        <Typography variant='body1' >
+        <Typography variant='h6' >
           Add Member
         </Typography>
       </Box>
       <Divider />
       
-      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Name</Typography>
+      <Box sx={drawerStyles.sectionContainer}>
+      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Name<span style={{ color: 'red' }}>*</span></Typography>
       <TextField
         required
         placeholder='Type name'
-        fullWidth={false}
+        fullWidth
         sx={drawerStyles.textField}
       />
+    </Box>
 
-      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Email</Typography>
+    <Box sx={{...drawerStyles.sectionContainer,display:'flex',flexDirection:'column'}}>
+      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Email<span style={{ color: 'red' }}>*</span></Typography>
       <TextField
         required
         placeholder='Email'
-        fullWidth={false}
         sx={drawerStyles.textField}
       />
+    </Box>
 
-      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Date of Joining</Typography>
+    <Box sx={drawerStyles.sectionContainer}>
+      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Date of Joining<span style={{ color: 'red' }}>*</span></Typography>
       <TextField
         type="date"
         required
-        InputLabelProps={{ shrink: true,width:'35px' }}
+        InputLabelProps={{ shrink: true }}
         fullWidth
         InputProps={{
           endAdornment: (
@@ -65,15 +69,19 @@ export default function RightDrawer({ open, onClose }) {
         }}
         sx={drawerStyles.dateField}
       />
+    </Box>
 
-      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Department</Typography>
+    <Box sx={drawerStyles.sectionContainer}>
+      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Department<span style={{ color: 'red' }}>*</span></Typography>
       <TextField
         placeholder='Select department'
         fullWidth
         sx={drawerStyles.textField}
       />
+    </Box>
 
-      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Designation</Typography>
+    <Box sx={drawerStyles.sectionContainer}>
+      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Designation<span style={{ color: 'red' }}>*</span></Typography>
       <FormControl fullWidth required sx={{ '& .MuiInputBase-root': { height: '40px' } }}>
         <Select
           displayEmpty
@@ -87,8 +95,10 @@ export default function RightDrawer({ open, onClose }) {
           <MenuItem value='Designer'>Designer</MenuItem>
         </Select>
       </FormControl>
+    </Box>
 
-      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Role</Typography>
+    <Box sx={drawerStyles.sectionContainer}>
+      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Role<span style={{ color: 'red' }}>*</span></Typography>
       <FormControl fullWidth required sx={{ '& .MuiInputBase-root': { height: '40px' } }}>
         <Select
           displayEmpty
@@ -102,8 +112,10 @@ export default function RightDrawer({ open, onClose }) {
           <MenuItem value='Viewer'>Viewer</MenuItem>
         </Select>
       </FormControl>
+    </Box>
 
-      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Reporting To</Typography>
+    <Box sx={drawerStyles.sectionContainer}>
+      <Typography variant='caption' sx={drawerStyles.sectionLabel}>Reporting To<span style={{ color: 'red' }}>*</span></Typography>
       <FormControl fullWidth>
         <Select
           onChange={(e) => setSelectedManager(e.target.value)}
@@ -145,6 +157,7 @@ export default function RightDrawer({ open, onClose }) {
           </Box>
         )}
       </FormControl>
+    </Box>
 
       <Box sx={drawerStyles.buttonContainer}>
         <Button variant='contained' onClick={onClose} sx={{ padding: '9px 20px', width: '184px', backgroundColor: '#49C792', textTransform: 'none' }}>
